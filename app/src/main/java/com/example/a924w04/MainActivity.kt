@@ -17,6 +17,7 @@ import com.example.a924w04.ui.theme._924W04Theme
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.layout.ContentScale
+
 // 메시지 데이터 클래스
 data class Message(
     val author: String,
@@ -35,20 +36,19 @@ class MainActivity : ComponentActivity() {
                             .fillMaxSize()
                             .padding(innerPadding),
                         contentAlignment = Alignment.Center
-                    )
-                    {
-                    Column(modifier = Modifier.padding(innerPadding)) {
-                        Greeting(name = "Android")
-                        MessageCard(
-                            message = Message(
-                                author = "포메라니안",
-                                body = "귀엽죠"
+                    ) {
+                        Column(modifier = Modifier.padding(innerPadding)) {
+                            Greeting(name = "Android")
+                            MessageCard(
+                                message = Message(
+                                    author = "포메라니안",
+                                    body = "귀엽죠"
+                                )
                             )
-                        )
+                        }
                     }
                 }
             }
-        }
         }
     }
 }
@@ -73,46 +73,48 @@ fun MessageCard(message: Message) {
             .padding(8.dp)
             .fillMaxWidth()
     ) {
-        Row(modifier = Modifier.padding(16.dp)) {
-            Image(
-                painter = painterResource(id = R.drawable.img), // res/drawable/img.png 필요
-                contentDescription = "프로필 이미지",
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .size(48.dp)
-                    .clip(CircleShape) // ✅ 원형 처리
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            Column {
-                Text(
-                    text = message.author,
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.onBackground
+        Column(modifier = Modifier.padding(16.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Image(
+                    painter = painterResource(id = R.drawable.img), // res/drawable/img.png 필요
+                    contentDescription = "프로필 이미지",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .size(48.dp)
+                        .clip(CircleShape)
                 )
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = message.body,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onBackground
-                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Column {
+                    Text(
+                        text = message.author,
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onBackground
+                    )
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text(
+                        text = message.body,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onBackground
+                    )
+                }
             }
-        }
-        Spacer(modifier = Modifier.height(8.dp)) // 텍스트와 버튼 사이 간격
 
-        Row(
-            horizontalArrangement = Arrangement.spacedBy(8.dp), // 버튼 사이 간격
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Button(onClick = { /* 첫 번째 버튼 클릭 처리 */ }, modifier = Modifier.weight(1f)) {
-                Text("좋아요   ")
-            }
-            Button(onClick = { /* 두 번째 버튼 클릭 처리 */ }, modifier = Modifier.weight(0.7f)) {
-                Text("넘기기")
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Button(onClick = { /* 첫 번째 버튼 클릭 처리 */ }, modifier = Modifier.weight(1f)) {
+                    Text("좋아요")
+                }
+                Button(onClick = { /* 두 번째 버튼 클릭 처리 */ }, modifier = Modifier.weight(0.7f)) {
+                    Text("넘기기")
+                }
             }
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
