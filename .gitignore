@@ -48,16 +48,16 @@ google-services.json
 *.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea
 .DS_Store
+HEAD
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
 44f1e71 (Initial commit)
+
+build/
+
+a0f8a4b (Initial commit - Stopwatch and Counter App)
