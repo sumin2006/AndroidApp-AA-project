@@ -29,11 +29,22 @@ class W04 : ComponentActivity() {
         }
     }
 }
+@Composable
+fun HomeScreen() {
+    Text(
+        text = "Compose Modifier를 배워보자",
+        modifier = Modifier.padding(start = 16.dp))
 
+}
+@Preview(showBackground = true)
+@Composable
+fun HomePreview(){
+    HomeScreen()
+}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Bello $name!",
         modifier = modifier
     )
 }
@@ -42,6 +53,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     _917SuminTheme {
-        Greeting("Android")
+        Greeting("Ios")
     }
 }

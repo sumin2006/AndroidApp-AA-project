@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
+    <style name="Theme._924W04" parent="android:Theme.Material.Light.NoActionBar" />
+=======
 
     <style name="Theme.StopWatchApp" parent="android:Theme.Material.Light.NoActionBar" />
+>>>>>>> 44f1e71 (Initial commit)
 </resources>

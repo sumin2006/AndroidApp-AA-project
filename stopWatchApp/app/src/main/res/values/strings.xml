@@ -1,3 +1,8 @@
 <resources>
+<<<<<<< HEAD
+    <string name="app_name">9.24 w04</string>
+=======
     <string name="app_name">stopWatchApp</string>
+    <string name="title_activity_stop_watch_app">StopWatchApp</string>
+>>>>>>> 44f1e71 (Initial commit)
 </resources>

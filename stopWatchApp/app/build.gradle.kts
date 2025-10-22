@@ -5,11 +5,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
+    namespace = "com.example.a924w04"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.a924w04"
+=======
     namespace = "com.example.stopwatchapp"
     compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.stopwatchapp"
+>>>>>>> 44f1e71 (Initial commit)
         minSdk = 24
         targetSdk = 36
         versionCode = 1

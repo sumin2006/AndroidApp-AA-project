@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "9.17 sumin"
 include(":app")
- 
+include(":app:w04")
+include(":app:myapplication")

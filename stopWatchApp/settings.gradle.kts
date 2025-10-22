@@ -19,6 +19,10 @@ dependencyResolutionManagement {
     }
 }
 
+HEAD
+rootProject.name = "9.24 w04"
+=======
 rootProject.name = "stopWatchApp"
+44f1e71 (Initial commit)
 include(":app")
  
