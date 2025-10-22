@@ -14,5 +14,5 @@
 
 <img src="image/playiamge.png" alt="앱 스크린샷" width="100">
 <img src="image/score.png" alt="앱 스크린샷" width="100">
-<p>버블 게임</p>
+<p>버블 게임 25.10.22</p>
 
