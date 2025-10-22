@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Click_Me"
+rootProject.name = "bubblegame1"
 include(":app")
-include(":app:lib")
+ 
