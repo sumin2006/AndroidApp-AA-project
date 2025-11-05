@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "bubblegame1"
+rootProject.name = "TO-DOlist"
 include(":app")
-include(":w06")
+ 
