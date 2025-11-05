@@ -5,11 +5,19 @@ plugins {
 }
 
 android {
+HEAD
     namespace = "com.example.library"
     compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.library"
+
+    namespace = "com.example.bubblegame1"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.bubblegame1"
+f413b8b0794a400584c4c8a9635ba2311a2759a3
         minSdk = 24
         targetSdk = 36
         versionCode = 1

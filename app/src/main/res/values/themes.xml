@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <style name="Theme.머티리얼라이브러리" parent="android:Theme.Material.Light.NoActionBar" />
+=======
+    <style name="Theme.Bubblegame1" parent="android:Theme.Material.Light.NoActionBar" />
+>>>>>>> f413b8b0794a400584c4c8a9635ba2311a2759a3
 </resources>
